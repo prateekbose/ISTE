@@ -107,15 +107,15 @@ nav{
 }
 
 .burger-active .line1{
-    transform: translate(0em, 0.25em) rotate(45deg);
-    -webkit-transform: translate(0em, 0.25em) rotate(45deg);
-    -moz-transform: translate(0em, 0.25em) rotate(45deg);
+    transform: translate(0em, 0.25em) rotate(45deg) !important;
+    -webkit-transform: translate(0em, 0.25em) rotate(45deg) !important;
+    -moz-transform: translate(0em, 0.25em) rotate(45deg) !important;
 }
 
 .burger-active .line2{
-    transform: translate(0em, -0.25em) rotate(-45deg);
-    -webkit-transform: translate(0em, -0.25em) rotate(-45deg);
-    -moz-transform: translate(0em, -0.25em) rotate(-45deg);    
+    transform: translate(0em, -0.25em) rotate(-45deg) !important;
+    -webkit-transform: translate(0em, -0.25em) rotate(-45deg) !important;
+    -moz-transform: translate(0em, -0.25em) rotate(-45deg) !important;    
 }
 
 @media only screen and (max-width: 768px){
