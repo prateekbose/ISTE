@@ -127,6 +127,10 @@ nav{
         width: 2em;
         transform: translateX(0em);
     }
+
+    .burger-active .line{
+        width: 1.5em;
+    }
 }
 
 .drop-down{
