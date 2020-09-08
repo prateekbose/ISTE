@@ -5,11 +5,12 @@ const menu = document.querySelector('.drop-down');
 const body = document.body;
 const sectionTitle = document.querySelector('.mobile-section');
 
-const navAnimate = () => {    
+const navAnimate = () => { 
     burger.addEventListener('click', () => {
         burger.classList.toggle('burger-active');
         navLinks.classList.toggle('nav-links-active');
         nav.classList.toggle('nav-active');
+        sectionTitle.classList.add('mobile-section-active');
         dropDown();
     });
 };
@@ -34,7 +35,7 @@ const navScroll = () => {
 const dropDown = () => {
     var navClassList = [...nav.classList];
     var menuClassList = [...menu.classList];
-    var sectionTitleClassList = [...sectionTitle.classList];
+    var burgerClassList = [...burger.classList];
 
     if(navClassList.includes("nav-scroll")){
         nav.classList.toggle('nav-scroll');
@@ -44,6 +45,10 @@ const dropDown = () => {
     }
     menu.classList.toggle('drop-down-active');
     body.classList.toggle('disable-scroll');
+
+    if(!(burgerClassList.includes('burger-active')) && (window.scrollY < nav.offsetHeight)){
+        sectionTitle.classList.remove('mobile-section-active');
+    }
 }
 
 const start = () => {
