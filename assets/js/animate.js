@@ -1,7 +1,10 @@
-const navAnimate = () => {
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
-    const nav = document.querySelector('nav');
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const nav = document.querySelector('nav');
+const menu = document.querySelector('.drop-down');
+const body = document.body;
+
+const navAnimate = () => {    
     burger.addEventListener('click', () => {
         burger.classList.toggle('burger-active');
         navLinks.classList.toggle('nav-links-active');
@@ -11,8 +14,6 @@ const navAnimate = () => {
 };
 
 const navScroll = () => {
-    const nav = document.querySelector('nav');
-    const menu = document.querySelector('.drop-down');
     var menuClassList = [...menu.classList];
     
     document.addEventListener('scroll', () => {
@@ -28,9 +29,6 @@ const navScroll = () => {
 };
 
 const dropDown = () => {
-    const menu = document.querySelector('.drop-down');
-    const nav = document.querySelector('nav');
-    const body = document.body;
     var navClassList = [...nav.classList];
     var menuClassList = [...menu.classList];
 
