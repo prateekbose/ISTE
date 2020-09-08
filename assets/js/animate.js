@@ -43,6 +43,7 @@ const dropDown = () => {
     }
     menu.classList.toggle('drop-down-active');
     body.classList.toggle('disable-scroll');
+    sectionTitle.classList.add('mobile-section-active');
 }
 
 const start = () => {
