@@ -34,6 +34,7 @@ const navScroll = () => {
 const dropDown = () => {
     var navClassList = [...nav.classList];
     var menuClassList = [...menu.classList];
+    var sectionTitleClassList = [...sectionTitle.classList];
 
     if(navClassList.includes("nav-scroll")){
         nav.classList.toggle('nav-scroll');
@@ -43,7 +44,6 @@ const dropDown = () => {
     }
     menu.classList.toggle('drop-down-active');
     body.classList.toggle('disable-scroll');
-    sectionTitle.classList.add('mobile-section-active');
 }
 
 const start = () => {
