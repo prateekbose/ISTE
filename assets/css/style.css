@@ -24,9 +24,27 @@ nav{
     z-index: 2;
 }
 
+.mobile-section{
+    font-family: 'Oswald',sans-serif;
+    text-transform: uppercase;
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
     nav{
         padding: 0.5em 1em;
+    }
+
+    .mobile-section{
+        display: block;
+        justify-self: center;
+        align-self: center;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .mobile-section-active{
+        opacity: 1;
     }
 }
 
@@ -71,7 +89,7 @@ nav{
 }
 
 .burger{
-    padding: 1em;
+    padding: 1em 0em;
 }
 
 .burger:hover{
@@ -82,7 +100,7 @@ nav{
     width: 2.5em;
     height: 0.25em;
     background-color: #313131;
-    margin: 0.25em;
+    margin: 0.25em 0em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +147,7 @@ nav{
     }
 
     .burger-active .line{
-        width: 1.5em;
+        width: 2em;
     }
 }
 

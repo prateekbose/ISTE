@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav-links');
 const nav = document.querySelector('nav');
 const menu = document.querySelector('.drop-down');
 const body = document.body;
+const sectionTitle = document.querySelector('.mobile-section');
 
 const navAnimate = () => {    
     burger.addEventListener('click', () => {
@@ -20,8 +21,10 @@ const navScroll = () => {
         if(!menuClassList.includes("drop-down-active")){
             if(window.scrollY >= nav.offsetHeight){
                 nav.classList.add('nav-scroll');
+                sectionTitle.classList.add('mobile-section-active');
             } else {
                 nav.classList.remove('nav-scroll');
+                sectionTitle.classList.remove('mobile-section-active');
             }
         }
         
