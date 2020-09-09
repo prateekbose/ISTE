@@ -549,3 +549,151 @@ nav{
         transform: translateY(4em);
     }
 }
+
+footer{
+    width: 100%;
+    background-color: #202020;
+}
+
+footer .signup{
+    padding: 3.5em 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup h1{
+    font-family: 'Oswald',sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.signup form{
+    padding: 1.5em 0em;
+}
+
+.signup form input[type=text]{
+    height: 2em;
+    width: 50vw;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.signup form input[type=text]:focus{
+    outline: none;
+}
+
+.signup form input[type=text]::placeholder{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.signup form input[type=submit]{
+    font-size: 1em;
+    width: 10em;
+    height: 4em;
+    border: thin solid white;
+    background-color: #212121;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.signup form input[type=submit]:hover{
+    background-color: white;
+    color: #313131;
+}
+
+@media only screen and (max-width: 1080px){
+    .signup{
+        flex-direction: column;
+        padding-bottom: 0em !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .signup h1{
+        text-align: left;
+    }
+
+    .signup form{
+        width: 17.5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup input{
+        padding: 0em 0em !important;
+        margin: 0em 0em 1em 0em !important;
+        width: 100% !important;
+        height: 3em !important;
+    }
+
+    .signup input[type=text]::placeholder{
+        text-align: center;
+    }
+}   
+
+.link-section{
+    padding: 2em 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+@media only screen and (max-width: 1080px){
+    .link-section{
+        flex-direction: column-reverse;
+        padding: 0% 10%;
+        text-align: center;
+    }
+
+    .link-section div{
+        margin: 1em 0em;
+    }
+}
+
+.link-section div:not(.ISTE) h1{
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ISTE img{
+    height: 3.5em;
+    width: auto;
+}
+
+.ISTE h1{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.link-section div ul{
+    list-style-type: none;
+}
+
+.link-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.link-section li{
+    padding: 0.25em 0em;
+
+}
+
+footer > p{
+    color: grey;
+    text-align: center;
+    padding: 2.5em 0em;
+}
