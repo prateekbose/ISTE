@@ -635,6 +635,10 @@ footer .signup{
         height: 3em !important;
     }
 
+    .signup input[type=text]{
+        text-align: center;
+    }
+
     .signup input[type=text]::placeholder{
         text-align: center;
     }
